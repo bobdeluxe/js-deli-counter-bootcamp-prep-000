@@ -1,13 +1,13 @@
-var katzDeli = [];
+var katzDeliLine = [];
 
 function takeANumber(katzDeliLine,name) {
   return katzDeliLine.push(name).length+1
 }
 
 function nowServing() {
-  if(katzDeli.length===0) {
+  if(katzDeliLine.length===0) {
     "There is noboby waiting to be served!"
   } else {
-    return katzDeli.shift()
+    return katzDeliLine.shift()
   }
 }
