@@ -6,6 +6,6 @@ function nowServing() {
   if(katzDeli.length===0) {
     "There is noboby waiting to be served!"
   } else {
-    return
+    return katzDeli.shift()
   }
 }
